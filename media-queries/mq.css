@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 5rem;
+  width: 5rem;
+}
+.item-1 {
+  background-color: blue;
+}
+.item-2 {
+  background-color: aquamarine;
+}
+.item-3 {
+  background-color: blueviolet;
+}
+
+@media (max-width: 300px) {
+  .container {
+    display: block;
+  }
+  .item-1 {
+    background-color: red;
+  }
+}
