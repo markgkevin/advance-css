@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Day</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>LOGO</h1>
+    </header>
+
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Hero Banner</h2>
+      </section>
+
+      <section class="services-flex">
+        <div>
+          <h3>Services</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex neque
+            nihil corrupti ullam soluta at.Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Ex neque nihil corrupti ullam soluta
+            at.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+            neque nihil corrupti ullam soluta at.
+          </p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magni
+            consequatur architecto perspiciatis quas hic!
+          </p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+            fugit delectus maiores. Atque, vel debitis.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>Logo</div>
+      <div>
+        <p>Copyright2 2023 all rights reserve</p>
+      </div>
+    </footer>
+
+    <label for="search">search</label>
+    <input type="search" placeholder="enter text here" id="search" />
+    <hr />
+    <input
+      type="range"
+      name="price"
+      id="price"
+      min="100"
+      max="10000"
+      step="100"
+      value="5000"
+    />
+    <output for="price" class="price-output"></output>
+
+    <p>
+      §1: The first rule of Fight Club is: You do not talk about Fight Club.
+    </p>
+
+    <hr />
+
+    <p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+
+    <div class="container">
+      <div class="items one">blue</div>
+      <div class="items two">red</div>
+      <div class="items three">yellow</div>
+    </div>
+
+    <script>
+      const price = document.querySelector("#price");
+      const output = document.querySelector(".price-output");
+
+      output.textContent = price.value;
+
+      price.addEventListener("input", () => {
+        output.textContent = price.value;
+      });
+    </script>
+  </body>
+</html>
